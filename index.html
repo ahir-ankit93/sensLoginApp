@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div ng-controller="myAppCtrl">
+
+        <form  ng-submit="addUsers()">
+                <h1>Login</h1>
+                <label for="userName">UserName :</label>
+                <input type="text" name="userName" id="userName" required ng-model="newUserName" placeholder="username"/> <br> <br>
+                <label for="userName">Password :</label>
+                <input type="password" name="password" id="password" required ng-model="newPassword" placeholder="password"/> <br> <br>
+                  
+                <input type="submit" value="Register"/>
+
+                <input type="button" ng-click="validate()" value="login"/>
+        </form><br><br>
+
+        <table border="1">
+                <tr>
+                    <th>User Name</th>
+                    <th>Password</th>
+                    <th>Remove</th>
+                </tr>
+                <tr ng-repeat="user in users track by $index"> 
+                    <td>{{user.username}}</td>
+                    <td>{{user.password}}</td>
+                    <td ng-click="removeUser(user)"><b>Delete</b></td>
+                </tr>
+        </table><br><br>
+
+
+
+    </div>
+
+<script src="JS/angular.min.js"></script>
+<script src="JS/angular-route.min.js"></script>
+<script src="JS/app.js"></script>
+</body>
+</html>

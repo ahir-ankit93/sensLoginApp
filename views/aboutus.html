@@ -1,0 +1,23 @@
+
+
+    <h3>About Us</h3>
+    
+        
+    
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Id</th>
+                    <th>Photo</th>
+                    <th>Runs</th>
+                </tr>
+                <tr ng-repeat="player in players">
+                    <td>{{player.name}}</td>
+                    <td>{{player.id}}</td>
+                    <td><img ng-src="{{player.photo}}"/></td>
+                    <td>{{player.runs}}</td>
+                </tr>
+        
+            </table>
+       
+

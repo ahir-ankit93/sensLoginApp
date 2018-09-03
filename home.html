@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myAppHome">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link href="/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+     -->
+</head>
+<body>
+   
+        <h1>Welcome To Home Page</h1>
+        <!-- <h2>
+                <header ng-include="'/views/menu.html'"></header>
+                <ng-View> </ng-View>
+        </h2>   -->
+
+        <div class="col-lg-12 col-md-12">
+            <div class="col-lg-6 col-md-6">
+                    <h4>
+                            <header ng-include="'/views/menu.html'"></header>  
+                    </h4>   
+            </div>
+            <div class="col-lg-6 col-md-6">
+                    <ng-View> </ng-View>
+            </div>
+    
+    </div>
+   
+
+
+
+    <script src="JS/angular.min.js"></script>
+    <script src="JS/angular-route.min.js"></script>
+    <script src="JS/home.js"></script>
+    <script src="JS/about.js"></script>
+    <script src="JS/contcat.js"></script>
+</body>
+</html>
